@@ -22,7 +22,7 @@
  		},
  		function(err, data) { // Upload file to S3
  			s3.putObject({
- 				Bucket: 'XXXXX Bucket Name', //Bucket Name
+ 				Bucket: 'aalawsbucket', //Bucket Name
  				Key: file.originalname, //Upload File Name, Default the original name
  				Body: data
  			}, this);

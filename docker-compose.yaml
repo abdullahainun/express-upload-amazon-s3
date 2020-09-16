@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build: ./
+    container_name: microservice_amazon_s3_v2_app
+    restart: always
+    ports:
+      - "8899:3000"
+    command:
+      "npm run start"
+    cap_add:
+      - ALL
